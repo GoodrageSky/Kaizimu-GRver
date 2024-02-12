@@ -4,21 +4,21 @@ using namespace std;
 vector<string>words;
 void disp()
 {
-	printf("ÄúÏÖÔÚµÄÌâÄ¿ÊÇ£º\n");
+	printf("æ‚¨ç°åœ¨çš„é¢˜ç›®æ˜¯ï¼š\n");
 	for(int i=0;i<words.size();i++)
 	{
 		printf("%d. ",i+1);
 		cout<<words[i].c_str()<<endl;
 	}
-	printf("ÊÇ·ñ½áÊø£¿ÊäÈëx±íÊ¾½áÊø\n");
-	printf("ÊäÈëaÌí¼ÓÌâÄ¿\n");
-	printf("ÊäÈëeĞŞ¸ÄÌâÄ¿\n");
-	printf("ÊäÈëdÉ¾³ıÌâÄ¿\n");
+	printf("æ˜¯å¦ç»“æŸï¼Ÿè¾“å…¥xè¡¨ç¤ºç»“æŸ\n");
+	printf("è¾“å…¥aæ·»åŠ é¢˜ç›®\n");
+	printf("è¾“å…¥eä¿®æ”¹é¢˜ç›®\n");
+	printf("è¾“å…¥dåˆ é™¤é¢˜ç›®\n");
 	return; 
 }
 void final()
 {
-	printf("Çë½«ÒÔÏÂ¼¸ĞĞÃüÁî¸´ÖÆÕ³ÌùÊäÈëkaizimu custom.exeÀï£º\n");
+	printf("è¯·å°†ä»¥ä¸‹å‡ è¡Œå‘½ä»¤å¤åˆ¶ç²˜è´´è¾“å…¥kaizimu custom.exeé‡Œï¼š\n");
 	
 	printf("%d\n",words.size());
 	for(int i=0;i<words.size();i++)
@@ -31,7 +31,7 @@ void final()
 int main()
 {
 	char dec='\0';
-	printf("Á¼Å­µÄ¿ª×ÖÄ¸³öÌâ»ú v0.0.2 BETA\n");
+	printf("è‰¯æ€’çš„å¼€å­—æ¯å‡ºé¢˜æœº v0.0.2 BETA\n");
 	disp(); 
 	while(dec!='x')
 	{
@@ -40,7 +40,7 @@ int main()
 		cin>>dec;
 		if(dec=='a')
 		{
-			printf("ÇëÊäÈë¸èÃû£º\n");
+			printf("è¯·è¾“å…¥æ­Œåï¼š\n");
 			getchar();
 			string s;
 			getline(cin,s);
@@ -49,9 +49,9 @@ int main()
 		}
 		else if(dec=='e')
 		{
-			printf("ÇëÊäÈëĞŞ¸ÄµÄÌâÄ¿±àºÅ£º\n");
+			printf("è¯·è¾“å…¥ä¿®æ”¹çš„é¢˜ç›®ç¼–å·ï¼š\n");
 			cin>>pls;
-			printf("ÇëÊäÈëĞŞ¸ÄºóµÄ¸èÃû£º\n");
+			printf("è¯·è¾“å…¥ä¿®æ”¹åçš„æ­Œåï¼š\n");
 			getchar();
 			string s;
 			getline(cin,s);
@@ -60,7 +60,7 @@ int main()
 		}
 		else if(dec=='d')
 		{
-			printf("ÇëÊäÈëÉ¾³ıµÄÌâÄ¿±àºÅ£º\n");
+			printf("è¯·è¾“å…¥åˆ é™¤çš„é¢˜ç›®ç¼–å·ï¼š\n");
 			cin>>pls;
 			words.erase(words.begin()+pls-1,words.begin()+pls); 
 			disp();
