@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int wordcnt=114;
-//ÉÏÒ»¸öÌîĞ´ÌâÄ¿ÊıÁ¿ 
-string ans[115]; //°¤¸öÊäÈë¸èÃû£¬¼ÇµÃ´òË«ÒıºÅ 
+//ä¸Šä¸€ä¸ªå¡«å†™é¢˜ç›®æ•°é‡ 
+string ans[115]; //æŒ¨ä¸ªè¾“å…¥æ­Œåï¼Œè®°å¾—æ‰“åŒå¼•å· 
 string cur[115];
 char lettersguessed[28];
 int lttp;
@@ -10,15 +10,15 @@ int wordsguessed;
 bool created=0;
 void createans()
 {
-	printf("Á¼Å­µÄ×ÖÄ¸»úv0.0.3 BETA\n");
-	printf("ÇëÊäÈë´Óproblem creator.exe»ñÈ¡µÄÃüÁî£º\n");
+	printf("è‰¯æ€’çš„å­—æ¯æœºv0.0.3 BETA\n");
+	printf("è¯·è¾“å…¥ä»problem creator.exeè·å–çš„å‘½ä»¤ï¼š\n");
 	scanf("%d",&wordcnt);
 	getchar();
 	for(int i=1;i<=wordcnt;i++)
 	{
 		getline(cin,ans[i]);
 	}
-	printf("ÊäÈë³É¹¦\n");
+	printf("è¾“å…¥æˆåŠŸ\n");
 	created=1;
 	return;
 }
@@ -35,8 +35,8 @@ void initcur()
 }
 void outputprogress()
 {
-	printf("¿ª×ÖÄ¸¿ªÊ¼£¡\n");
-	printf("ÒÑ¿ª×ÖÄ¸£º");
+	printf("å¼€å­—æ¯å¼€å§‹ï¼\n");
+	printf("å·²å¼€å­—æ¯ï¼š");
 	for(int i=1;i<=lttp;i++)
 	{
 		printf("%c",lettersguessed[i]);
@@ -111,5 +111,5 @@ int main()
 	}
 	return 0;
 } 
-//ÊäÈë o Ò»¸ö×ÖÄ¸£¬±íÊ¾¿ª×ÖÄ¸
-//ÊäÈëc Ò»¸öÊı×Ö£¬±íÊ¾µÚ¼¸Ìâ×ö¶Ô 
+//è¾“å…¥ o ä¸€ä¸ªå­—æ¯ï¼Œè¡¨ç¤ºå¼€å­—æ¯
+//è¾“å…¥c ä¸€ä¸ªæ•°å­—ï¼Œè¡¨ç¤ºç¬¬å‡ é¢˜åšå¯¹ 
